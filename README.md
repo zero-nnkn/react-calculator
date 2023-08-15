@@ -1,11 +1,11 @@
 <div align="center">
   <p>
     <a align="center" href="http://selab.edu.vn:20440" target="_blank">
-      <img width="50%" src="https://raw.githubusercontent.com/zero-nnkn/react-calculator/assets/teaser.png"></a>
+      <img width="70%" src="https://raw.githubusercontent.com/zero-nnkn/react-calculator/assets/teaser.png"></a>
   </p>
 <br>
 
-🔢 Simple Calculator website with ReactJS
+**🔢 Simple Calculator website with ReactJS**
 </div>
 <br>
 
@@ -40,5 +40,5 @@ Your app is ready to be deployed!
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
 ## <div align="center">✔️ TODO</div>
-- [ ] Supports more operations
+- [ ] Support more operations
 - [ ] Responsive UI
