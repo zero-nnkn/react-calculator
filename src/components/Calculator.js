@@ -2,9 +2,12 @@ import React from 'react';
 import './Calculator.css';
 
 const Calculator = ({display, setDisplay}) => {
+    // Handle the click of a button
     const handleClick = (e) => {
         const buttonName = e.target.name;
         if (buttonName === "=") {
+            // Set the display to the result of the expression
+            // If the expression is invalid, keep the display
             try {
                 setDisplay(eval(display).toString());
             } catch(err) {
@@ -12,12 +15,16 @@ const Calculator = ({display, setDisplay}) => {
             }   
         }
         else if (buttonName === "AC") {
+            // Clear the display
             setDisplay("");
         }
         else if (buttonName === "C") {
+            // Remove the last character from the display
             setDisplay(display.slice(0, -1));
         }
         else{
+            // Add nummber/operator to the display when clicking a button
+            // If the display is too long, don't allow more input
             if (display.toString().length > 20) {
                 return;
             }
